@@ -3,27 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --black-100: #16171b;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: sans-serif;
+  display: block;
+  overflow-x: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+a {
+  transition: transform .2s, opacity .2s, border-color .2s ease-in-out, color .2s ease-in-out, background-color .2s ease-in-out, opacity .2s ease-in-out;
+}
+
+img {
+  vertical-align: middle;
+}
+
+* {
+  boxing-size: border-box;
 }
 
 @layer utilities {
@@ -31,3 +31,10 @@ body {
     text-wrap: balance;
   }
 }
+
+/* @font-face {
+  font-family: "Input Sans";
+  src: url("../public/Input Sans/InputSans-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+} */

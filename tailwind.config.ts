@@ -9,10 +9,49 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'hero-pattern': 'url("/background.png"), linear-gradient(to right, #42312c, #452225)',
+        'hero-pattern_2': 'url("/background.png"), linear-gradient(to right, #b07157, #b93d3e)',
+        'hero-pattern_3': 'url("/background.png"), linear-gradient(to right, #19332e, #1f3529)',
       },
+      backgroundSize: {
+        'size-200_200': '200px 200px',
+      },
+      backgroundPosition: {
+        'pos-0_0': '0px 0px',
+      },
+      colors: {
+        'black-100': 'var(--black-100)',
+        'black-101': "#0a0a0c",
+      },
+      boxShadow: {
+        'xs': '0 1px 0 0 rgba(255, 255, 255, .1)',
+        'inset-white': 'inset 0 0 0 1px rgb(255 255 255)',
+        'inset-red': 'inset 0 0 0 1px #ff4d4d',
+      },
+      fontSize: {
+        "inherit": "inherit"
+      },
+      gridTemplateColumns: {
+        "max-content-fr": "max-content 1fr",
+        "eight-auto": "auto auto auto auto auto auto auto auto",
+      },
+      screens: {
+        "xd": {"max": "991px"}
+      },
+      gridRowStart: {
+        "span-1": "span 1",
+      },
+      gridRowEnd: {
+        "span-1": "span 1",
+      },
+      gridColumnStart: {
+        "span-1": "span 1",
+        "span-5": "span 5",
+      },
+      gridColumnEnd: {
+        "span-1": "span 1",
+        "span-5": "span 5",
+      }
     },
   },
   plugins: [],
