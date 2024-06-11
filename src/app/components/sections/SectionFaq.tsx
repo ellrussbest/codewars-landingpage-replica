@@ -195,13 +195,13 @@ export default function SectionFaq() {
                             : "opacity-0 delay-[1500ms]"
                         }`}
                         style={{
-                          transform: `translateX(${-1280 * currentSlide}px)`,
+                          transform: `translateX(${-100 * currentSlide}%)`,
                         }}
                       >
                         <div className="h-full items-center p-[4rem] pb-24 flex">
                           <div className="ml-auto mr-auto text-center w-full max-w-[48rem]">
                             <p
-                              className={`${input_sans.className} text-[2.625rem] font-normal leading-[1.25]`}
+                              className={`${input_sans.className} xd:text-[1.9rem] text-[2.625rem] xs:text-[1.75rem] font-normal leading-[1.25]`}
                             >
                               {carouselObject.testimony}
                             </p>
@@ -219,8 +219,8 @@ export default function SectionFaq() {
                               />
                               <div className="bg-[url(/background.png)] bg-[position:0_0] bg-[size:200px] absolute top-0 bottom-0 left-0 right-0"></div>
                             </div>
-                            <div className="p-4 pt-0 pl-0 pr-0"></div>
-                            <p className="text-[1.25rem] font-bold mb-0 mt-0">
+                            <div className="pt-0 pl-0 pr-0 p-4"></div>
+                            <p className="text-[1.25rem] xs:text-[1rem] font-bold mb-0 mt-0">
                               {carouselObject.name}
                             </p>
                             <p className="mt-0 mb-0">

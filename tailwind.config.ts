@@ -40,6 +40,7 @@ const config: Config = {
       },
       screens: {
         xd: { max: "991px" },
+        xs: { max: "767px" },
       },
       gridRowStart: {
         "span-1": "span 1",
